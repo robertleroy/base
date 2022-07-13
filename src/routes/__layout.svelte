@@ -1,7 +1,16 @@
+<svelte:window bind:innerWidth />
+
 <script>
-  import { sidebarOpen } from '$lib/stores/store';
+	import { page } from '$app/stores';
+  import Menu from '$lib/components/menu.svelte';
+  import { titlecase, mainNav, sidebarOpen } from '$lib/stores/index';
 
   import "../app.css";
+
+  let innerWidth;
+  $: {
+    innerWidth >= 900 ? $sidebarOpen = false : '';
+  }
 
   const closeSidebar = () => sidebarOpen.set(false);
 </script>
@@ -18,18 +27,21 @@
     </a>
 
     <nav class="nav-bar">
-      <div class="nav-item">
-        <a href="/">Home</a>
+      <div class="nav-item"  on:click={closeSidebar}
+        class:active={'/' === $page.url.pathname}>
+        <a href='/'>Home</a>
       </div>
-      <div class="nav-item">
-        <a href="/about">About</a>
+      {#each $mainNav.routes as {name,url}}
+      <div class="nav-item"  on:click={closeSidebar}
+        class:active={ $page.url.pathname.includes(url)}>
+        <a href={url}>{titlecase(name)}</a>
       </div>
+      {/each}
     </nav>
   </div>
 
   <div class="btnMenu" on:click={() => $sidebarOpen = !$sidebarOpen}>
-    <!-- <BtnMenu toggle={$sidebarOpen}/> -->
-    <div>BtnMenu {$sidebarOpen}</div>
+    <Menu openMenu={!$sidebarOpen} />
   </div>
 </header>
 
@@ -38,3 +50,8 @@
     <slot />
   </div>
 </main>
+
+
+<style>
+  
+</style>

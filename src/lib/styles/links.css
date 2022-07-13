@@ -1,17 +1,8 @@
 /* $lib/styles/links.css */
 
 /* #region Links */
-:where( a ) {
-  color: var(--link-color);
-}
-:where( a:not(:hover) ) {
-  text-decoration: none;
-}
-:where( a:hover ) {
-  /* color: var(--link-hover); */
-}
-:where( a:active ) {
-  color: var(--accent-color);
-  text-decoration: none;
-}
+:where( a ) { color: var(--link-color); text-decoration: none; }
+:where( a:not(:hover) ) { text-decoration: none; }
+:where( a:hover:not(:active) ) { opacity: 0.6;  text-decoration: underline; }
+/* :where( a:active) { text-decoration: none; } */
 /* #endregion Links */

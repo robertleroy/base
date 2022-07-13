@@ -68,3 +68,11 @@ git branch -M main
 git remote add origin https://github.com/robertleroy/base.git
 git push -u origin main
 ```
+
+<br>
+
+#### 9. Update Repo
+``` sh
+git add . && commit -m "update"
+git push
+```

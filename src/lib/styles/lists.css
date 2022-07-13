@@ -1,26 +1,11 @@
 /* $lib/styles/lists.css */
 
 /* #region Lists */
-.unlist, .unlist ol, .unlist ul,
-nav ol, nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-/* .unlist ol ol, .unlist ul ul,
-nav ol ol, nav ul ul {
-  padding: 0 0 1ch 0;
-} */
-
 :where(ol, ul) {
-list-style-position: inside;
-/* list-style-type: none; */
+  list-style-position: inside;
 }
 ul ul, ol ol, ul ol, ol ul {
   padding: 0 0 1ch 2ch;
-}
-:where(ol, ul) {
-  /* list-style-type: none; */
-  /* padding: 0 1ch; */
 }
 ol ol {
   list-style-type: lower-latin;
@@ -29,27 +14,44 @@ ol ol {
 ol ol ol {
   list-style-type: lower-roman;
 }
-:where(dt, summary) {
-  /* color: var(--text-1); */
-	font-weight: var(--font-weight-6)
+
+
+/* unlist */
+.unlist, .unlist ol, .unlist ul,
+nav ol, nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-:where(summary) {
-	/* background: var(--bg-3); */
-	border-radius: var(--radius);
-	margin: calc(0.5rem*-1) calc(1rem*-1);
-	padding: 0.5rem 1rem;
+
+/* dl */
+:where(dt) {
+	font-weight: 600;
 }
 
+:where(dd) {
+  margin-left: 2ch;
+}
+
+dt:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+dd:last-child {
+  margin-bottom: 0.5rem;
+}
+
+
+/* details */
 :where(details) {
   display: block;
-	/* background: var(--bg-2); */
-	/* border-radius: 0.3rem; */
+  margin-bottom: 1rem;
 }
-:where(summary) {
-  display: list-item;
-}
-:where(details[open]>summary) {
-	margin-bottom: 0.5rem;
-}
+
+details p { margin: 0 0 ; }
+details li { margin-left: 1.75rem; }
+
+/* :where(details[open]>summary) {
+	margin-bottom: 0.2rem;
+} */
 /* #endregion Lists */
