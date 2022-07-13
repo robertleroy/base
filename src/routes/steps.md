@@ -73,6 +73,6 @@ git push -u origin main
 
 #### 9. Update Repo
 ``` sh
-git add . && commit -m "update"
+git add . && git commit -m "update"
 git push
 ```
