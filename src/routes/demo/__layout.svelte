@@ -3,6 +3,8 @@
 	import { page } from '$app/stores';
 	import { titlecase, demoNav, sidebarOpen } from '$lib/stores/index';
 
+  // console.log('url',base + $demoNav.url);
+
   const closeSidebar = () => sidebarOpen.set(false); 
 </script>
 

@@ -13,6 +13,8 @@
     innerWidth >= 900 ? $sidebarOpen = false : '';
   }
 
+  // console.log('url',base + '/' === $page.url.pathname);
+
   const closeSidebar = () => sidebarOpen.set(false);
 </script>
 
