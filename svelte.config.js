@@ -35,7 +35,7 @@ const config = {
       default: true
     },
 
-    // trailingSlash: 'always',
+    trailingSlash: 'ignore',
   },
 
   preprocess: [
