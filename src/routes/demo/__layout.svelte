@@ -10,7 +10,7 @@
 <aside class="side-bar" class:sidebarOpen={$sidebarOpen} >
   <nav class="side-nav">
     <h4 class="sidenav-header"  on:click={closeSidebar}
-      class:active={$demoNav.url === $page.url.pathname}>
+      class:active={base + $demoNav.url === $page.url.pathname}>
       <a href="{ base }{$demoNav.url}">{titlecase($demoNav.title)}</a>
     </h4>
     

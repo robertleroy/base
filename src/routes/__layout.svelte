@@ -29,8 +29,8 @@
 
     <nav class="nav-bar">
       <div class="nav-item"  on:click={closeSidebar}
-        class:active={'/' === $page.url.pathname}>
-        <a href='{ base }/'>Home</a>
+        class:active={base + '/' === $page.url.pathname}>
+        <a href={base + '/'}>Home</a>
       </div>
       {#each $mainNav.routes as {name,url}}
       <div class="nav-item"  on:click={closeSidebar}
