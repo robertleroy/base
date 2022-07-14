@@ -1,6 +1,7 @@
 <svelte:window bind:innerWidth />
 
 <script>
+  import { base } from '$app/paths';
 	import { page } from '$app/stores';
   import Menu from '$lib/components/menu.svelte';
   import { titlecase, mainNav, sidebarOpen } from '$lib/stores/index';
@@ -17,7 +18,7 @@
 
 <header>
   <div class="flex">
-    <a class="title" href="/" on:click={closeSidebar}>
+    <a class="title" href="{ base }/" on:click={closeSidebar}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 9">
         <path d="M5.877 8.833c.78-.148 1.017-.386 1.099-1.11.058-.508.41-1.089.781-1.29.527-.286.634-.583.483-1.345-.262-1.33.183-1.235 2.036.438.862.778 1.924 1.724 2.36 2.1l.794.686-.591-.937c-.575-.911-.572-.957.121-1.705.391-.423.611-.87.487-.996-.123-.125-.055-.568.151-.983.207-.416.419-1.193.47-1.727.095-.968.107-.961 4.073 2.206 3.47 2.773 6.307 4.849 5.8 4.245-.09-.108-2.4-2.046-5.131-4.306l-4.966-4.11-2.003 2.253-2.003 2.251-1.018-.592-1.02-.593-3.779 2.627C1.943 7.391.14 8.665.013 8.78c-.292.26 4.538.306 5.864.055Z"/>
       </svg>
@@ -29,12 +30,12 @@
     <nav class="nav-bar">
       <div class="nav-item"  on:click={closeSidebar}
         class:active={'/' === $page.url.pathname}>
-        <a href='/'>Home</a>
+        <a href='{ base }/'>Home</a>
       </div>
       {#each $mainNav.routes as {name,url}}
       <div class="nav-item"  on:click={closeSidebar}
         class:active={$page.url.pathname.includes(url)}>
-        <a href={url}>{titlecase(name)}</a>
+        <a href='{ base }{url}'>{titlecase(name)}</a>
       </div>
       {/each}
     </nav>

@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
 	import { titlecase, mainNav, sidebarOpen } from '$lib/stores/index';
   import Steps from './steps.md';
 
@@ -8,12 +9,12 @@
 <aside class="aside" class:sidebarOpen={$sidebarOpen}>
   <nav class="side-nav">
     <div class="sidenav-header active" on:click={closeSidebar}>
-      <a href="/">Home</a>
+      <a href="{ base }/">Home</a>
     </div>
     
     {#each $mainNav.routes as {name, url}}
     <div class="sidenav-item" on:click={closeSidebar}>
-      <a href='{url}'>{titlecase(name)}</a>
+      <a href='{ base }{url}'>{titlecase(name)}</a>
     </div>
     {/each}
   </nav>
