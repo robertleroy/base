@@ -4,6 +4,8 @@ import preprocess from "svelte-preprocess";
 // import adapter from "@sveltejs/adapter-auto";
 import adapter from '@sveltejs/adapter-static';
 
+const dev = "production" === "development"; /* +++++++++++ */
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
@@ -12,17 +14,24 @@ const config = {
     adapter: adapter({
       // default options are shown. On some platforms
       // these options are set automatically — see below
-      pages: 'build',
-      assets: 'build',
+      pages: 'docs', /* +++++++++++ */
+      assets: 'docs', /* +++++++++++ */
+      // pages: 'build',
+      // assets: 'build',
       fallback: null,
       precompress: false
     }),
+
+    paths: { 
+        base: dev ? "" : "/base", /* +++++++++++ */
+    },
     
     prerender: {
       // This can be false if you're using a fallback (i.e. SPA mode)
       default: true
-    }
+    },
 
+    target: "#app" /* +++++++++++ */
     // trailingSlash: 'always',
   },
 
