@@ -27,7 +27,7 @@ const config = {
     }),
 
     paths: {
-      base: '/base',
+      // base: '/base',
     },
     
     prerender: {

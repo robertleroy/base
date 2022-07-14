@@ -6,7 +6,7 @@ export const sidebarOpen = writable(false);
 
 // #region Routes
 export const mainNav = readable({
-  title: "Base",
+  title: "Home",
   url: '/',
   routes: [
     { name: "Demo", url: "/demo" },
