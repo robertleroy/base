@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-3d553357.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/demo/forms.svelte-bbc67a13.css">
+	<link rel="modulepreload" href="/_app/immutable/start-780af84e.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-aa4d509f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-5d357a6e.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-9d765a9c.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/stores-592b6c36.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/filters-6d93f697.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/store-e6bcf55e.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/demo/__layout.svelte-57fa7cbd.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/demo/forms.svelte-bf59c44d.js">
+	</head>
+	<body>
+		<div id="app">
+
+
+
+
+
+
+<header><div class="flex"><a class="title" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 9"><path d="M5.877 8.833c.78-.148 1.017-.386 1.099-1.11.058-.508.41-1.089.781-1.29.527-.286.634-.583.483-1.345-.262-1.33.183-1.235 2.036.438.862.778 1.924 1.724 2.36 2.1l.794.686-.591-.937c-.575-.911-.572-.957.121-1.705.391-.423.611-.87.487-.996-.123-.125-.055-.568.151-.983.207-.416.419-1.193.47-1.727.095-.968.107-.961 4.073 2.206 3.47 2.773 6.307 4.849 5.8 4.245-.09-.108-2.4-2.046-5.131-4.306l-4.966-4.11-2.003 2.253-2.003 2.251-1.018-.592-1.02-.593-3.779 2.627C1.943 7.391.14 8.665.013 8.78c-.292.26 4.538.306 5.864.055Z"></path></svg>
+      <h1 class="h3">Base
+      </h1></a>
+
+    <nav class="nav-bar"><div class="nav-item"><a href="/">Home</a></div>
+      <div class="nav-item active"><a href="/demo">Demo</a>
+      </div><div class="nav-item"><a href="/about">About</a>
+      </div></nav></div>
+
+  <div class="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" fill="currentColor" class="svelte-6ej1iw"><rect class="topbar svelte-6ej1iw" ry="1.5" x="0" y="2" height="4" width="28"></rect><rect class="middleBar svelte-6ej1iw" ry="1.5" x="0" y="10" height="4" width="28"></rect><rect class="bottombar svelte-6ej1iw" ry="1.5" x="0" y="18" height="4" width="28"></rect></svg></div></header>
+
+<main><div class="router"><aside class="side-bar"><nav class="side-nav"><h4 class="sidenav-header"><a href="/demo">Demo</a></h4>
+    
+    <div class="sidenav-item"><a href="/demo/headings">Headings</a>
+    </div><div class="sidenav-item"><a href="/demo/text">Text</a>
+    </div><div class="sidenav-item"><a href="/demo/lists">Lists</a>
+    </div><div class="sidenav-item active"><a href="/demo/forms">Forms</a>
+    </div><div class="sidenav-item"><a href="/demo/code">Code</a>
+    </div><div class="sidenav-item"><a href="/demo/table">Table</a>
+    </div><div class="sidenav-item"><a href="/demo/colors">Colors</a>
+    </div></nav></aside>
+
+
+<section class="page"><article class="content"><h3>Forms</h3>
+
+<hr>
+
+<form><fieldset><legend class="svelte-5jo5ta">Personal Data for Horace Tabor</legend>
+
+    <div class="formGrid svelte-5jo5ta"><label for="firstName" required>First Name</label>
+      <input type="text" id="firstName" name="firstName" value="Horace">
+
+      <label for="lastName" required>Last Name</label>
+      <input type="text" id="lastName" name="lastName" value="Tabor">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" value="horace@tabor.com">
+
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" value="1963-10-14">
+
+      <input type="submit" value="Submit"> 
+
+      </div> </fieldset></form> 
+
+<section class="textualInput svelte-5jo5ta"><div class="label">text</div>
+  <input type="text" placeholder="text" value="">
+  <span></span>
+  
+  <div class="label">search</div>
+  <input type="search" placeholder="search" value="">
+  <span></span>
+  
+  <div class="label">email</div>
+  <input type="email" placeholder="email" value="">
+  <span></span>
+  
+  <div class="label">tel</div>
+  <input type="tel" placeholder="tel" pattern="[0-9]3-[0-9]3-[0-9]4" required value="">
+  <span></span>
+  
+  <div class="label">tel (imask)</div>
+  <input type="tel" placeholder="tel (imask)" required value="">
+  <span></span>
+
+  <div class="label">url</div>
+  <input type="url" placeholder="url" value="">
+  <span></span>
+  
+  <div class="label">password</div>
+  <input type="password" placeholder="password" value="">
+  <span></span>
+  
+  <div class="label">date</div>
+  <input type="date" placeholder="date" value="">
+  <span></span>
+  
+  <div class="label">time</div>
+  <input type="time" placeholder="time" value="">
+  <span></span>
+  
+  <div class="label">datetime-local</div>
+  <input type="datetime-local" placeholder="datetime-local" value="">
+  <span></span>
+
+  <div class="label">number</div>
+  <input type="number" placeholder="number">
+  <span></span>
+
+  <div class="label">number (imask)</div>
+  <input type="text" placeholder="number (imask)">
+    <span></span></section> 
+
+<hr>   
+
+<section class="buttons"><button>button</button>
+  <input type="button" value="input btn">
+  <input type="submit" value="submit">
+  <input type="reset" value="reset">
+  <input type="color" value="#008800"></section> 
+
+<hr>   
+
+<section class="checkables"><em>Which Stooges do you like?</em> 
+
+  <span class="favStooge svelte-5jo5ta"><span class="likedStooge svelte-5jo5ta">Curley
+      </span></span>
+
+  <div class="checklist svelte-5jo5ta"><label for="Larry" class="svelte-5jo5ta"><input type="checkbox" id="Larry" class="svelte-5jo5ta">
+        <span>Larry: </span>
+        <span>false</span>
+      </label><label for="Moe" class="svelte-5jo5ta"><input type="checkbox" id="Moe" class="svelte-5jo5ta">
+        <span>Moe: </span>
+        <span>false</span>
+      </label><label for="Curley" class="svelte-5jo5ta"><input type="checkbox" id="Curley" class="svelte-5jo5ta" checked>
+        <span>Curley: </span>
+        <span>true</span>
+      </label></div>
+  
+  <em>Who is your favorite Stooge?</em> 
+  <span class="favStooge svelte-5jo5ta">Curley</span>
+
+  <div class="radioList svelte-5jo5ta"><label class="label svelte-5jo5ta"><input type="radio" value="[object Object]" class="svelte-5jo5ta">Larry
+    </label><label class="label svelte-5jo5ta"><input type="radio" value="[object Object]" class="svelte-5jo5ta">Moe
+    </label><label class="label svelte-5jo5ta"><input type="radio" value="[object Object]" class="svelte-5jo5ta" checked>Curley
+    </label></div></section> 
+
+<hr>   
+
+<section class="progress svelte-5jo5ta"><div class="div"><input type="number" min="0" max="100" class="svelte-5jo5ta" value="33">
+    <br>
+    <input type="range" min="0" max="100" value="33">
+    <br>
+    <progress id="file" value="33" max="100"></progress></div>
+  <div class="div"><div class="emojies svelte-5jo5ta"><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌑</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span><span style="filter: grayscale(67%)">🌒</span></div></div></section> 
+
+<hr></article></section></div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="1brkfgl">
+		import { start } from "/_app/immutable/start-780af84e.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1brkfgl"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 3, 8],
+				params: {},
+				routeId: "demo/forms"
+			}
+		});
+	</script></div>
+	</body>
+</html>

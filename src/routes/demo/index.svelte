@@ -1,6 +1,6 @@
 <script>
-  import { demoNav } from "$lib/stores/store";
-  import { titlecase } from '$lib/stores/filters';
+  // import { demoNav } from "$lib/stores/store";
+  // import { titlecase } from '$lib/stores/filters';
 </script>
 
 

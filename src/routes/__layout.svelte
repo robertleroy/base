@@ -33,7 +33,7 @@
       </div>
       {#each $mainNav.routes as {name,url}}
       <div class="nav-item"  on:click={closeSidebar}
-        class:active={ $page.url.pathname.includes(url)}>
+        class:active={$page.url.pathname.includes(url)}>
         <a href={url}>{titlecase(name)}</a>
       </div>
       {/each}
