@@ -33,7 +33,7 @@
         <a href={base + '/'}>Home</a> -->
     <nav class="nav-bar">
       <div class="nav-item"  on:click={closeSidebar}
-           class:active={base + $mainNav.url === $page.url.pathname}>
+           class:active={base + '/' === $page.url.pathname}>
         <a href='{ base }{$mainNav.url}'>{titlecase($mainNav.title)}</a>
       </div>
       {#each $mainNav.routes as {name,url}}
