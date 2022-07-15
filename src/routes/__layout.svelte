@@ -3,7 +3,7 @@
 <script>
   import { base } from '$app/paths';
 	import { page } from '$app/stores';
-  import Menu from '$lib/components/menu.svelte';
+  import Menu from '$lib/components/btnMenu.svelte';
   import { titlecase, mainNav, sidebarOpen } from '$lib/stores/index';
 
   import "../app.css";

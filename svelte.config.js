@@ -16,12 +16,8 @@ const config = {
 
   kit: {
     adapter: adapter({
-      // default options are shown. On some platforms
-      // these options are set automatically — see below
-      pages: 'docs', /* +++++++++++ */
-      assets: 'docs', /* +++++++++++ */
-      // pages: 'build',
-      // assets: 'build',
+      pages: 'docs', 
+      assets: 'docs', 
       fallback: null,
       precompress: false
     }),
@@ -31,7 +27,6 @@ const config = {
     },
     
     prerender: {
-      // This can be false if you're using a fallback (i.e. SPA mode)
       default: true
     },
 

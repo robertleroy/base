@@ -40,7 +40,7 @@
   let displayDate = "";
   let displayTime = "";
   let displayDatetime = "";
-  let displayNumber;
+  // $: displayNumber = $userData.count;
 
   let selectedStooge = $userData.stooges[2];  
   $: likedStooges = $userData.stooges.filter((item) => {
@@ -165,20 +165,20 @@
 
   <div class="label">number</div>
   <input type="number" placeholder="number"
-    bind:value={displayNumber} >
+    bind:value={$userData.count} >
   <span>
-    {#if displayNumber !== undefined}  
-    {displayNumber}
+    {#if $userData.count !== undefined}  
+    {$userData.count}
     {/if}
   </span>
 
   <div class="label">number (imask)</div>
   <input type="text" placeholder="number (imask)"
     use:imask={numMask}
-    bind:value={displayNumber}>
+    bind:value={$userData.count}>
     <span>
-      {#if displayNumber !== undefined}  
-      {displayNumber}
+      {#if $userData.count !== undefined}  
+      {$userData.count}
       {/if}
     </span>
 </section> <!-- textualInput -->

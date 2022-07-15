@@ -9,8 +9,8 @@ export const mainNav = readable({
   title: "Home",
   url: '/',
   routes: [
+    { name: "Svelte", url: "/svelte" },
     { name: "Demo", url: "/demo" },
-    // { name: "Components", url: "/components" },
     { name: "About", url: "/about" },
   ]
 });
@@ -29,11 +29,26 @@ export const demoNav = readable({
   ]
 });
 
-export const componentsNav = readable({
-  title: "Components",
-  url: '/components',
+export const svelteNav = readable({
+  title: "Svelte",
+  url: '/svelte',
   routes: [
-    // { name: "", url: "/components/" },
+    { name: "Stores", url: "/svelte/stores", routes: [] },
+    // { name: "Routing", url: "/svelte/routing", routes: [] },
+    { name: "Components", url: "/svelte/components", routes: [
+      { name: "BtnMenu", url: "/svelte/components/btnMenu" },
+      { name: "Number", url: "/svelte/components/number" },
+      { name: "Range", url: "/svelte/components/range" },
+      { name: "Phone", url: "/svelte/components/phone" },
+      { name: "Outclick", url: "/svelte/components/outclick" },
+    ] },
+    { name: "MDSVEX", url: "/svelte/mdsvex" ,
+    routes: [
+      { name: "Tabs", url: "/svelte/mdsvex/tabs" },
+    ]},
+    { name: "Github", url: "/svelte/github", routes: [
+      { name: "Github Pages", url: "/svelte/github/pages" },
+    ] },
   ]
 });
 
@@ -46,17 +61,18 @@ const initialUserData = {
     first: 'Horace', 
     last: 'Tabor'
   },
-  userName: "robleroy",
-  password: "1234",
+  userName: "Matchless",
+  password: "BabyDoe",
   address: {
     street: "80401 E 7th Rd",
-    city: "Leadville",
+    city: "Leadville", 
     state: "CO",
     zip: "80461"
   },
   phone: "3031234567",
   email: "horace@tabor.com",
-  birthday: "1963-10-14",
+  birthday: "1830-11-26",
+  deathday: "1899-04-10",
   time: {
     min: "09:00", 
     max: "18:00",
@@ -70,10 +86,10 @@ const initialUserData = {
   url: "github.com",
   fruit: "banana",
   checked: true,
-  count: 7,
+  count: 33,
   percent: 33,
   min: 0,
-  max: 10,
+  max: 100,
   step: 1,
   
   stooges: [

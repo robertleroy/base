@@ -162,6 +162,9 @@ aside {
 .content {
   padding: 1rem var(--horiz-padding);
 }
+article h4 {
+  margin-top: 1.5rem;
+}
 /* #endregion page */
 
 

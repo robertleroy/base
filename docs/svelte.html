@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/base/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/base/_app/immutable/assets/pages/__layout.svelte-f3765687.css">
+	<link rel="stylesheet" href="/base/_app/immutable/assets/btnMenu-d9e01172.css">
+	<link rel="stylesheet" href="/base/_app/immutable/assets/pages/svelte/index.md-63231a3e.css">
+	<link rel="modulepreload" href="/base/_app/immutable/start-0bbe16d5.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-05c97b0b.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-e8995614.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/__layout.svelte-fc5d1e57.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/stores-a72ee7b9.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/btnMenu-bc9ce085.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/filters-6d93f697.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/store-70b76800.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/svelte/__layout.svelte-a73f0742.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/svelte/index.md-926ed1d3.js">
+	</head>
+	<body>
+		<div id="app">
+
+
+
+
+
+
+<header><div class="flex"><a class="title" href="/base/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 9"><path d="M5.877 8.833c.78-.148 1.017-.386 1.099-1.11.058-.508.41-1.089.781-1.29.527-.286.634-.583.483-1.345-.262-1.33.183-1.235 2.036.438.862.778 1.924 1.724 2.36 2.1l.794.686-.591-.937c-.575-.911-.572-.957.121-1.705.391-.423.611-.87.487-.996-.123-.125-.055-.568.151-.983.207-.416.419-1.193.47-1.727.095-.968.107-.961 4.073 2.206 3.47 2.773 6.307 4.849 5.8 4.245-.09-.108-2.4-2.046-5.131-4.306l-4.966-4.11-2.003 2.253-2.003 2.251-1.018-.592-1.02-.593-3.779 2.627C1.943 7.391.14 8.665.013 8.78c-.292.26 4.538.306 5.864.055Z"></path></svg>
+      <h1 class="h3">Base
+      </h1></a>
+
+    
+    <nav class="nav-bar"><div class="nav-item"><a href="/base/">Home</a></div>
+      <div class="nav-item active"><a href="/base/svelte">Svelte</a>
+      </div><div class="nav-item"><a href="/base/demo">Demo</a>
+      </div><div class="nav-item"><a href="/base/about">About</a>
+      </div></nav></div>
+
+  <div class="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" fill="currentColor" class="svelte-1kg67c8"><rect class="topbar svelte-1kg67c8" ry="1.5" x="0" y="2" height="4" width="28"></rect><rect class="middleBar svelte-1kg67c8" ry="1.5" x="0" y="10" height="4" width="28"></rect><rect class="bottombar svelte-1kg67c8" ry="1.5" x="0" y="18" height="4" width="28"></rect></svg></div></header>
+
+<main><div class="router"><aside class="side-bar"><nav class="side-nav"><h4 class="sidenav-header active"><a href="/base/svelte">Svelte</a></h4>
+    
+    <div class="sidenav-item"><a href="/base/svelte/stores">Stores</a>
+    </div><div class="sidenav-item"><a href="/base/svelte/components">Components</a>
+    </div><div class="sidenav-item"><a href="/base/svelte/mdsvex">Mdsvex</a>
+    </div><div class="sidenav-item"><a href="/base/svelte/github">Github</a>
+    </div></nav></aside>
+
+
+<section class="page"><article class="content">
+<h3 class="tabs svelte-dyceoo"><div class="tab svelte-dyceoo selectedTab">SvelteKit</div>
+  <div class="spacer svelte-dyceoo">|</div><div class="tab svelte-dyceoo">Svelte Vite</div>
+  <div class="spacer svelte-dyceoo">|</div></h3>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token comment"># Init &amp; follow prompts ~ svelte vite</span>
+<span class="token function">npm</span> init @svelte-add/kit@latest
+
+<span class="token comment"># Add plugins</span>
+<span class="token function">npm</span> i -D postcss-nested
+
+<span class="token function">npm</span> <span class="token function">install</span>    
+<span class="token function">npm</span> run dev</code><!-- HTML_TAG_END --></pre>
+<h4>PostCSS Config</h4>
+<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token comment">/* postcss.config.cjs */</span>
+<span class="token keyword">const</span> autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"autoprefixer"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> postcss_nested <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-nested'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    autoprefixer<span class="token punctuation">,</span> 
+    postcss_nested
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> config<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h4>PostCSS Import</h4>
+<pre class="language-css"><!-- HTML_TAG_START --><code class="language-css"><span class="token comment">/* app.css -- Write your global styles here, in PostCSS syntax */</span>
+
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/variables.css'</span><span class="token punctuation">;</span></span> 
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/base.css'</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/lists.css'</span><span class="token punctuation">;</span></span> 
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/links.css'</span><span class="token punctuation">;</span></span> 
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/forms.css'</span><span class="token punctuation">;</span></span> 
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/shadows.css'</span><span class="token punctuation">;</span></span> 
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">'$lib/styles/vs-dark.css'</span><span class="token punctuation">;</span></span> 
+<span class="token comment">/* @import '$lib/styles/codeblock.css';  */</span>
+<span class="token comment">/* @import '$lib/styles/blockquote.css';  */</span>
+<span class="token comment">/* @import '$lib/styles/tables.css';  */</span></code><!-- HTML_TAG_END --></pre>
+<h4>Component</h4>
+<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token comment">&lt;!-- component.svelte --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">let</span> title <span class="token operator">=</span> <span class="token string">'title'</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  &#123;title&#125;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>postcss<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
+<br><br><br></article></section></div>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="1kk6mvz">
+		import { start } from "/base/_app/immutable/start-0bbe16d5.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1kk6mvz"]').parentNode,
+			paths: {"base":"/base","assets":"/base"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "ignore",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 3, 26],
+				params: {},
+				routeId: "svelte"
+			}
+		});
+	</script></div>
+	</body>
+</html>

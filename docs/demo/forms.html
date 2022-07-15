@@ -5,18 +5,21 @@
 		<link rel="icon" href="/base/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/base/_app/immutable/assets/pages/__layout.svelte-3d553357.css">
+	<link rel="stylesheet" href="/base/_app/immutable/assets/pages/__layout.svelte-f3765687.css">
+	<link rel="stylesheet" href="/base/_app/immutable/assets/btnMenu-d9e01172.css">
 	<link rel="stylesheet" href="/base/_app/immutable/assets/pages/demo/forms.svelte-bbc67a13.css">
-	<link rel="modulepreload" href="/base/_app/immutable/start-c3d95712.js">
-	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-aa4d509f.js">
-	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-5d357a6e.js">
+	<link rel="modulepreload" href="/base/_app/immutable/start-0bbe16d5.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-05c97b0b.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/index-e8995614.js">
 	<link rel="modulepreload" href="/base/_app/immutable/chunks/paths-396f020f.js">
-	<link rel="modulepreload" href="/base/_app/immutable/pages/__layout.svelte-cba4bb28.js">
-	<link rel="modulepreload" href="/base/_app/immutable/chunks/stores-592b6c36.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/__layout.svelte-fc5d1e57.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/stores-a72ee7b9.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/btnMenu-bc9ce085.js">
 	<link rel="modulepreload" href="/base/_app/immutable/chunks/filters-6d93f697.js">
-	<link rel="modulepreload" href="/base/_app/immutable/chunks/store-a473b8ea.js">
-	<link rel="modulepreload" href="/base/_app/immutable/pages/demo/__layout.svelte-778279a2.js">
-	<link rel="modulepreload" href="/base/_app/immutable/pages/demo/forms.svelte-abed43d2.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/store-70b76800.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/demo/__layout.svelte-67e4c50e.js">
+	<link rel="modulepreload" href="/base/_app/immutable/pages/demo/forms.svelte-06505690.js">
+	<link rel="modulepreload" href="/base/_app/immutable/chunks/action-4431b50a.js">
 	</head>
 	<body>
 		<div id="app">
@@ -32,11 +35,12 @@
 
     
     <nav class="nav-bar"><div class="nav-item"><a href="/base/">Home</a></div>
-      <div class="nav-item active"><a href="/base/demo">Demo</a>
+      <div class="nav-item"><a href="/base/svelte">Svelte</a>
+      </div><div class="nav-item active"><a href="/base/demo">Demo</a>
       </div><div class="nav-item"><a href="/base/about">About</a>
       </div></nav></div>
 
-  <div class="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" fill="currentColor" class="svelte-6ej1iw"><rect class="topbar svelte-6ej1iw" ry="1.5" x="0" y="2" height="4" width="28"></rect><rect class="middleBar svelte-6ej1iw" ry="1.5" x="0" y="10" height="4" width="28"></rect><rect class="bottombar svelte-6ej1iw" ry="1.5" x="0" y="18" height="4" width="28"></rect></svg></div></header>
+  <div class="btnMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" fill="currentColor" class="svelte-1kg67c8"><rect class="topbar svelte-1kg67c8" ry="1.5" x="0" y="2" height="4" width="28"></rect><rect class="middleBar svelte-1kg67c8" ry="1.5" x="0" y="10" height="4" width="28"></rect><rect class="bottombar svelte-1kg67c8" ry="1.5" x="0" y="18" height="4" width="28"></rect></svg></div></header>
 
 <main><div class="router"><aside class="side-bar"><nav class="side-nav"><h4 class="sidenav-header"><a href="/base/demo">Demo</a></h4>
     
@@ -66,7 +70,7 @@
       <input type="email" id="email" name="email" value="horace@tabor.com">
 
       <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday" value="1963-10-14">
+      <input type="date" id="birthday" name="birthday" value="1830-11-26">
 
       <input type="submit" value="Submit"> 
 
@@ -113,12 +117,12 @@
   <span></span>
 
   <div class="label">number</div>
-  <input type="number" placeholder="number">
-  <span></span>
+  <input type="number" placeholder="number" value="33">
+  <span>33</span>
 
   <div class="label">number (imask)</div>
-  <input type="text" placeholder="number (imask)">
-    <span></span></section> 
+  <input type="text" placeholder="number (imask)" value="33">
+    <span>33</span></section> 
 
 <hr>   
 
@@ -167,10 +171,10 @@
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="1mkh2xb">
-		import { start } from "/base/_app/immutable/start-c3d95712.js";
+		<script type="module" data-sveltekit-hydrate="15mx9nl">
+		import { start } from "/base/_app/immutable/start-0bbe16d5.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1mkh2xb"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="15mx9nl"]').parentNode,
 			paths: {"base":"/base","assets":"/base"},
 			session: {},
 			route: true,
@@ -179,7 +183,7 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 3, 8],
+				nodes: [0, 2, 10],
 				params: {},
 				routeId: "demo/forms"
 			}
