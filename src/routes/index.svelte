@@ -9,19 +9,24 @@
       { title: 'Svelte', url: 'https://svelte.dev/docs'},
       { title: 'SvelteKit', url: 'https://kit.svelte.dev/docs/'},
       { title: 'Svelte-Add', url: 'https://github.com/svelte-add/svelte-add'},
-      { title: 'Svelte Repl', url: 'https://svelte.dev/repl/'},
+      { title: 'Repl', url: 'https://svelte.dev/repl/'},
     ]
   },
   {
     items: [
       { title: 'Css Selectors', url: 'https://www.w3schools.com/cssref/css_selectors.asp'},
       { title: 'PostCSS', url: 'https://postcss.org/'},
-      { title: 'w3schools: How To', url: 'https://www.w3schools.com/howto/default.asp'},
     ]
   },
   {
     items: [
       { title: 'SVGOMG', url: 'https://jakearchibald.github.io/svgomg/'},
+      { title: 'w3schools: How To', url: 'https://www.w3schools.com/howto/default.asp'},
+    ]
+  },
+  {
+    items: [
+      { title: 'Named Colors', url: 'https://www.w3schools.com/colors/colors_groups.asp'},
       { title: 'Converting Colors', url: 'https://convertingcolors.com/'},
     ]
   },
@@ -48,6 +53,12 @@
   <article class="content">
     <h2>Base</h2>
     <hr>
+    
+    <p style:text-align="right">
+      <img src="old_book.png" alt="base" id="image">
+
+      <cite>Ἐν ἀρχῇ ἦν Ὁ Λόγος</cite>
+    </p>
 
     <div class="list">
       {#each links as section}
@@ -86,5 +97,12 @@
   }
   .spacer:last-child {
     display: none;
+  }
+  p {
+    padding: 2rem 0 1rem;
+  }
+  p img {
+    margin: 0 auto 3rem;
+    filter: saturate(50%) opacity(80%) drop-shadow(0 12px 12px hsl(210, 8%, 53%));
   }
 </style>

@@ -48,6 +48,7 @@ export const svelteNav = readable({
     ]},
     { name: "Github", url: "/svelte/github", routes: [
       { name: "Github Pages", url: "/svelte/github/pages" },
+      { name: "Deploy", url: "/svelte/github/deploy" },
     ] },
   ]
 });
